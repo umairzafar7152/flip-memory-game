@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Flip Memory</string>
+    <string name="cardBack">cardBack</string>
+    <string name="title_activity_app_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="fab_content_desc">settings</string>
+    <string name="type_of_images">Type of images</string>
+    <string name="type_fruits">Fruits</string>
+    <string name="type_flags">Flags</string>
+    <string name="type_animals">Animals</string>
+    <string name="type_colors">Colors</string>
+    <string name="type_logos">Logos</string>
+    <string name="choose_type_to_play">Choose type to play…</string>
+    <string name="replay_button_txt">Replay Button</string>
+    <string name="pause_button_txt">Pause Button</string>
+    <string name="player_1_txt">" Player 1: "</string>
+    <string name="player_2_txt">" Player 2: "</string>
+    <string name="attempts_txt">" Attempts: "</string>
+    <string name="score_txt">" Score: "</string>
+    <string name="btn_continue_txt">Continue</string>
+    <string name="btn_quit_txt">QUIT</string>
+    <string name="music_txt">" Music "</string>
+    <string name="sound_txt">" Sound "</string>
+    <string name="game_paused_txt">" Game is paused! "</string>
+    <string name="player_won">"  Player %1$s  "</string>
+    <string name="won_the_game_txt">Won the Game</string>
+    <string name="btn_cancel_txt">Cancel</string>
+    <string name="play_again_btn_txt">Play Again</string>
+    <string name="flip_memory_txt">Flip Memory</string>
+    <string name="single_player_txt">Single Player</string>
+    <string name="two_players_txt">Two Player</string>
+    <string name="attempts"> 0 </string>
+    <string name="score"> 0 </string>
+    <string name="challenge_your_memory_txt">" Challenge Your Memory "</string>
+    <string name="player1_score">" 0 "</string>
+    <string name="player2_score">" 0 "</string>
+    <string name="game_is_paused_txt">" Game is paused! "</string>
+    <string name="do_you_want_to_quit_txt">" Do you want to Quit? "</string>
+    <string name="do_you_want_to_replay_txt">" Do you want to replay? "</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="congratulations_txt">" Congratulations "</string>
+    <string name="new_high_score_txt">" New High Score! "</string>
+    <string name="game_over_txt">" Game Over! "</string>
+    <string name="high_score"> 0  </string>
+    <string name="high_score_txt">" High Score: "</string>
+</resources>

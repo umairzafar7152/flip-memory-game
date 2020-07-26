@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flipMemoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/flip_memory_txt"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/moonAnimation"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flipMemoryText"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/moon_animation" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/singlePlayerCard"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="24dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/twoPlayerCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/main_button_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/single_person"
+                android:contentDescription="@string/single_player_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/audiowide"
+                android:gravity="center"
+                android:text="@string/single_player_txt"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/twoPlayerCard"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#00000000"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/singlePlayerCard"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_button_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/two_person"
+                android:contentDescription="@string/two_players_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/audiowide"
+                android:gravity="center"
+                android:text="@string/two_players_txt"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/shareBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/share_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/settingBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/settings" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/buttonSinglePlayer"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:backgroundTint="#d9d9d9"-->
+    <!--        android:drawableTop="@drawable/baseline_person_outline"-->
+    <!--        android:fontFamily="@font/bangers"-->
+    <!--        android:text="Single Player"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="28sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/buttonTwoPlayer"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/buttonTwoPlayer"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:background="@drawable/main_button_bg"-->
+    <!--        android:backgroundTint="#d9d9d9"-->
+    <!--        android:drawableTop="@drawable/baseline_people_outline_black_18dp"-->
+    <!--        android:fontFamily="@font/bangers"-->
+    <!--        android:text="Two Player"-->
+    <!--        android:textColor="@drawable/player_color_focus"-->
+    <!--        android:textSize="28sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/buttonSinglePlayer"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.499" />-->
+
+
+<!--    android:backgroundTint="#d66853"-->
+<!--    android:background="@drawable/main_activity_bg"-->
+
+
+<!--    android:backgroundTint="#bc3908"-->
+
+<!--    "#bc3908"-->

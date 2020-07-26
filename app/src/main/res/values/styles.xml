@@ -1,0 +1,32 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="winnerAnimation" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="FormButton" parent="Theme.MaterialComponents">
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <item name="colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="colorOnSurface">@android:color/holo_orange_light</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+<!--    <style name="mystyle">-->
+<!--        <item name="android:layout_marginTop">10dp</item>-->
+<!--        ... other things that your elements have in common-->
+<!--    </style>-->
+</resources>
+
+
+<!--    Theme.AppCompat.Light.NoActionBar-->
+<!--    Theme.MaterialComponents.Light.NoActionBar-->

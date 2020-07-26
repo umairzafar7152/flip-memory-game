@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_settings_layout"
+    android:layout_width="320dp"
+    android:layout_height="220dp"
+    android:layout_centerInParent="true"
+    android:layout_weight="0.6"
+    android:background="@drawable/winner_dialog_bg">
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_cancel_alert"
+        android:contentDescription="@string/cardBack"
+        android:cropToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pref_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/prefs_layout"
+        app:layout_constraintBottom_toTopOf="@+id/pref_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/dialog_text_shape"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/sound_txt"
+            android:textColor="#277da1"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/soundSwitch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".9"
+            app:si_disabled_color="#4f646f"
+            app:si_enabled="true"
+            app:si_no_dash="false"
+            app:si_tint_color="#277da1"
+            app:srcCompat="@drawable/ic_volume" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pref_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/prefs_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/musicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/dialog_text_shape"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/music_txt"
+            android:textColor="#277da1"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/musicSwitch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".9"
+            app:si_disabled_color="#4f646f"
+            app:si_enabled="false"
+            app:si_no_dash="false"
+            app:si_tint_color="#277da1"
+            app:srcCompat="@drawable/ic_music" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout><!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="250dp"-->
+    <!--    android:layout_height="250dp"-->
+    <!--    android:background="@drawable/prefs_layout">-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/btnCancel"-->
+    <!--        android:layout_width="35dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:background="@drawable/ic_cancel_alert"-->
+    <!--        android:cropToPadding="false"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/pref_2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:background="@drawable/prefs_layout"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.3">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="24dp"-->
+    <!--            android:fontFamily="@font/bangers"-->
+    <!--            android:text="Sound "-->
+    <!--            android:textSize="28sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.github.angads25.toggle.LabeledSwitch-->
+    <!--            android:id="@+id/soundSwitch"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            app:colorBorder="#8a5a44"-->
+    <!--            app:colorOn="#8a5a44"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:on="true"-->
+    <!--            app:textOff="OFF"-->
+    <!--            app:textOn="ON" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/pref_3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:background="@drawable/prefs_layout"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/pref_2">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/musicText"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="24dp"-->
+    <!--            android:fontFamily="@font/bangers"-->
+    <!--            android:text="Music "-->
+    <!--            android:textSize="28sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.github.angads25.toggle.LabeledSwitch-->
+    <!--            android:id="@+id/musicSwitch"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            app:colorBorder="#8a5a44"-->
+    <!--            app:colorOn="#8a5a44"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:on="true"-->
+    <!--            app:textOff="OFF"-->
+    <!--            app:textOn="ON" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--<com.github.angads25.toggle.LabeledSwitch-->
+    <!--android:id="@+id/musicSwitch"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--app:colorBorder="#8a5a44"-->
+    <!--app:colorOn="#8a5a44"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:on="true"-->
+    <!--app:textOff="OFF"-->
+    <!--app:textOn="ON" />-->

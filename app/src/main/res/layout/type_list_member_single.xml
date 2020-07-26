@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/optAnimals"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@drawable/type_list_border_single"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:id="@+id/lIcon"
+        android:layout_marginStart="16dp"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/animals"
+        android:padding="8dp"
+        android:contentDescription="@string/type_of_images" />
+    <TextView
+        android:id="@+id/lText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/type_animals"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:fontFamily="@font/bangers" />
+</LinearLayout>

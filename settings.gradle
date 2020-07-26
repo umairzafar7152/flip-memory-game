@@ -1,0 +1,2 @@
+rootProject.name='Flip Memory'
+include ':app'
